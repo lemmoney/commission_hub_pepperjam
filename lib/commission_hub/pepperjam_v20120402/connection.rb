@@ -3,6 +3,7 @@ module CommissionHub
     class Connection < CommissionHub::Connection
 
       def_endpoint :advertiser, 'advertiser', class: :Base
+      def_endpoint :coupon, 'creative/coupon', class: :Base
 
       def initialize(settings)
         @settings = settings
