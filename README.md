@@ -26,9 +26,7 @@ Create a `initializers/commission_hub.rb` with your affiliates configuration fil
 CommissionHub.setup do |config|
 
   config.setup :commission_junction_v20120402 do |c|
-  end
-
-  config.setup :impact_radius do |c|
+   c.api_key = 'your_api_key'
   end
 
 end
