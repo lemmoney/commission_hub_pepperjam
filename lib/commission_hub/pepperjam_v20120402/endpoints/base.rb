@@ -4,7 +4,7 @@ module CommissionHub
       class Base < CommissionHub::Endpoint
 
         def call(request_params={})
-          request_params = { query: { "ApiKey" => api_key }}.merge(request_params)
+          request_params = { query: { "apiKey" => api_key }}.merge(request_params)
           connection.class.get(full_uri, request_params)
         end
 
