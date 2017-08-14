@@ -5,7 +5,7 @@ module CommissionHub
       def_endpoint :advertiser, 'advertiser',        class: :Base
       def_endpoint :link,       'creative/generic',  class: :Base
       def_endpoint :coupon,     'creative/coupon',   class: :Base
-      def_endpoint :discount,   'creative/discount', class: :Base
+      def_endpoint :discount,   'creative/text',     class: :Base
       def_endpoint :banner,     'creative/banner',   class: :Base
 
       def initialize(settings)
